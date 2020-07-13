@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Display current date</title>
+        <script>
+            function display()
+            {
+                var obj=new Date();
+                var one,two,date,month,year,three,four;
+                date=obj.getDate();
+                month=obj.getMonth();
+                year=obj.getFullYear();
+                one=month+"-"+date+"-"+year;
+                two=month+"/"+date+"/"+year;
+                three=date+"-"+month+"-"+year;
+                four=date+"/"+month+"/"+year;
+                document.getElementById("type1").innerHTML="Format mm-dd-yy , mm/dd/yy or dd-mm-yy , dd/mm/yy : "+one+" , "+two+" or "+three+" , "+four;
+            }
+        </script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Displaying current date</h1>
+        <h4>Click the below button to display current date in mm-dd-yy , mm/dd/yy  or  dd-mm-yy , dd/mm/yy format </h4>
+        <button onclick="display()">Click me</button>
+        <p id="type1"></p>
+    </body>
+</html>
