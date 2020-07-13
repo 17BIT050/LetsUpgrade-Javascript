@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>Display current date and time</title>
+        <script>
+            function display()
+            {
+                var obj=new Date();
+                var day=["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+                document.getElementById("time").innerHTML="Today is : "+day[obj.getDay()-1];
+                var hour=obj.getHours();
+                var result=(hour>=12)?'PM':'AM';
+                hour=(hour>12)?hour-12:hour;
+                document.getElementById("date").innerHTML="Current time is : "+hour+" "+result+":"+obj.getMinutes()+":"+obj.getSeconds();
+            }
+        </script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Current Date and Time Viewer</h1>
+        <h4>Click the below button to get current date and time</h4>
+        <button onclick="display()">Click me</button>
+        <p id="time"></p>
+        <p id="date"></p>
+    </body>
+</html>
