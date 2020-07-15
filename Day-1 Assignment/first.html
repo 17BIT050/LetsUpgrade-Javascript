@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>Console functions</title>
+        <script>
+            function display()
+            {
+                //Console.log()
+                document.write('<h2><dl>console.log()</dl></h2>');
+                document.write('<h3><dd>1.Prints output to the console</dd></h3>');
+                document.write('<h3><dd>2.Example:</dd></h3>');
+                console.log(10);
+                document.write('<h3><dd> >>console.log(10); <br> >>10</dd></h3>');
+                      
+                //console.error()
+                document.write('<h2><dl>console.error()</dl></h2>');
+                document.write('<h3><dd>1.Prints error message to the console</dd></h3>');
+                document.write('<h3><dd>2.Example:</dd></h3>');
+                console.error('Invalid');
+                document.write('<h3><dd> >>console.error("Invalid"); <br> >>Invalid</dd></h3>');  
+
+                //console.table()
+                document.write('<h2><dl>console.table()</dl></h2>');
+                document.write('<h3><dd>1.Displays the data in the form of table</dd></h3>');
+                document.write('<h3><dd>2.Example:</dd></h3>');
+                console.table([1,2]);
+                document.write('<h3><dd> >>console.table([1,2]);</dd></h3>')   
+                document.write('<h3><dd><table border="1"><tr><th>Index</th><th>Value</th> <tr><td>0</td> <td>1</td></tr> <tr><td>1</td> <td>2</td></tr> </table> </dd></h3>'); 
+            
+            }
+        </script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Various Console Functions</h1>
+        <h3>Click the button to see the varoius functions</h3>
+        <button onclick="display()">Click me</button>
+        <p id="demo"></p>
+    </body>
+</html>
