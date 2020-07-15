@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>Variables var let const</title>
+        <script>
+            function call()
+            {
+                document.write('<h1 style="text-align:center;">Variable scopes</h1>');
+                document.write('<h2><d1>Var</dl></dl></h2>');
+                document.write('<h3><dd>1.Var has global scope throughout the function and it is mutable.</dd></h3>');
+                document.write('<h3><dd>2.Example');
+                document.write('<h3><dd> function one(){ <br> { <br> var a=10; <br> } <br> { <br> document.write(a) <p style="color:red;">//prints the value of a and it is accessable</p> } <br> } </dd><h3>');
+
+                document.write('<h2><d1>Let</dl></dl></h2>');
+                document.write('<h3><dd>1.Let has local scope within a block.</dd></h3>');
+                document.write('<h3><dd>2.Example');
+                document.write('<h3><dd> function one(){ <br> { <br> var a=10; <br> } <br> { <br> document.write(a) <p style="color:red;">//prints the error and it is not accessable</p> } <br> } </dd></h3>');  
+   
+                document.write('<h2><d1>Const</dl></dl></h2>');
+                document.write('<h3><dd>1.Const has global scope throughout the function and it is immutable.</dd></h3>');
+                document.write('<h3><dd>2.Example');
+                document.write('<h3><dd> function one(){ <br> { <br> var a=10; <br> } <br> { <br> a=12; <p style="color:red;">//prints the error message that value cannot be changed.</p> } <br> } ');
+            }
+        </script>
+    </head>
+    <body onload="call()">
+    </body>
+</html>
