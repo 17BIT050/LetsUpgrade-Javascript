@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Order Functions</title>
+</head>
+<script>
+    let call=function(){
+        let n=+prompt('Enter a positive number');
+        let arr=new Array();
+        for(let i=1;i<=n;i++)
+             arr.push(i);
+        let odd=arr.filter((val)=>{
+             if(val%2!=0)
+                return val;
+        });  
+        let cube=odd.map((el)=>Math.pow(el,3));
+        console.log(cube);
+    }
+    call();
+</script>
+<body>
+    
+</body>
+</html>
