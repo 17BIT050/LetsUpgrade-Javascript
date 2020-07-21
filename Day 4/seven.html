@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Numbers</title>
+    <script>
+        let prime=function(){
+           let n=+prompt('Enter N value to generate Prime Numbers');
+           primeNumbers(n);
+        }
+        prime();
+
+        function primeNumbers(n){
+            for(let i=2;i<=n;i++)
+            {
+                if(isprime(i))
+                   console.log(i);
+            }    
+        }
+
+        function isprime(val){
+            if(val<=1)
+                 return false;
+            for(let i=2;i<val;i++)
+            {
+                if(val%i==0)
+                    return false;
+            }    
+            return true; 
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

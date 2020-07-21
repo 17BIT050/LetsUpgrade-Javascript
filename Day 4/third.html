@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread operation</title>
+    <script>
+        let spread=function(){
+            let shoppinglist=['Rice','Oil','Tomato','Wheat'];
+            console.log(shoppinglist);
+            
+            //Before using Spread operator
+            let shoppingBasket=shoppinglist;
+            console.log(shoppingBasket);
+            //shoppingBasket.push('Coffee');
+           // console.log(`ShoppingList>>${shoppinglist}\nShoppingBasket>>${shoppingBasket} `);
+          
+            //After using spread operator
+            let basket=[...shoppinglist]
+            basket.push('coffee');
+            console.log("Shopping List");
+            console.log(shoppinglist);
+            console.log('Shopping Basket');
+            console.log(basket);
+        }
+        spread();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

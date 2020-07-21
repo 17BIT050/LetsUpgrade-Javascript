@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Commision</title>
+    <script>
+        let sales=function(){
+            sale=prompt('Enter your sales value');
+            if(sale>0 && sale<=5000)
+                  console.log(`Commision earned by him is ${sale*0.02}`);
+            else if(sale>5000 && sale<=10000)
+                  console.log(`Commision earned by him is ${sale*0.05}`);
+            else if(sale>10000 && sale<=20000)
+                  console.log(`Commision earned by him is ${sale*0.07}`);
+            else if(sale>20000)
+                  console.log(`Commision earned by him is ${sale*0.10}`);
+            else 
+                  console.log('enter correct value');                        
+        }
+        sales();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

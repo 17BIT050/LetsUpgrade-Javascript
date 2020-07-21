@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replace Function expressions with Arrow Function</title>
+    <script>
+        let arrow=function(){
+           //function ask(question ,yes,no){
+        //        if(confirm(question))
+        //            yes();
+        //         else 
+        //            no();   
+        //    }
+
+        //    ask(
+        //        "Do you agree ?",
+        //        function(){alert('You agreed');},
+        //        function(){alert('You cancelled');}
+        //    );
+
+         let ask=(question,yes,no)=>{
+             if(confirm(question))
+                 yes();
+             else
+                 no();  
+         }  
+          ask(
+              'Do you agree ?',
+              ()=>alert('You agreed'),
+              ()=>alert('You cancelled the execution')
+          );      
+        }
+        arrow();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

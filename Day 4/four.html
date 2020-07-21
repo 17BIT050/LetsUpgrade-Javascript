@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <script>
+        let calc=function(){
+            let option=Number(prompt(`Enter your choice 
+            1.Add
+            2.Subtract
+            3.Multiply
+            4.Divide
+            5.SquareRoot
+            6.Percentage
+           Say Eg:
+              For Addition enter>>1 `));
+           switch(option)
+           {
+             case 1:
+                { let v1=+prompt('Enter Value 1');
+                 let v2=+prompt('Enter Value 2');
+                 console.log(v1+v2);
+                 break;}
+              case 2:
+                 {let v1=+prompt('Enter Value 1');
+                 let v2=+prompt('Enter Value 2');
+                 console.log(v1-v2);
+                 break;}
+              case 3:
+                 {let v1=+prompt('Enter Value 1');
+                 let v2=+prompt('Enter Value 2');
+                 console.log(v1*v2);
+                 break;}
+              case 4:
+                { let v1=+prompt('Enter Value 1');
+                 let v2=+prompt('Enter Value 2'); 
+                 console.log(v1/v2);
+                 break;}
+              case 5:
+                 let v1=+prompt('Enter Base Value ');
+                 let v2=+prompt('Enter Power Value ');
+                 console.log(v1**v2); 
+                 break;  
+               case 6:
+                  let val=prompt('Enter values with spaces');
+                  let arr=val.split(' ');
+                  let len=sum=0;
+                  //console.log(arr);
+                  //console.log(typeof arr);
+                  arr.forEach((element)=>{
+                      sum=sum+ +element;
+                      len+=1;
+                  });
+                  let percent=(sum/len);
+                  console.log(percent);
+            }    
+        }
+        
+        calc();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

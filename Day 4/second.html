@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructure</title>
+    <script>
+        let destructure=function(){
+            //Before Destructuring
+            const student={
+                name:"Helsinki",
+                age:24,
+                projects:{
+                    diceGame:"Two player Dice game using Javascript"
+                }
+            }
+            console.log(`Name:${student.name}\nAge:${student.age}\nProjects:${student.projects.diceGame}`);
+            //After Destructuring
+            const{name,age,projects:{diceGame}}=student;
+            console.log(name,age,diceGame);
+        }
+        destructure();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
